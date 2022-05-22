@@ -1,0 +1,38 @@
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		
+		<title>
+			tu thuc hanh 
+		</title>
+	</head>
+	<body>
+		
+			<input type="text" id="ten">
+		
+			<input type="number" id="tuoi">
+			
+		
+			<select type="gender" id="gioitinh">> 
+			<option value="nam">nam</option>
+			<option value="nu">nu</option>
+			</select>
+		
+		
+		
+		
+			<input type="submit" value="Submit" onclick="onClick()">
+		<script>
+			function onClick(){
+				var ten = document.getElementById('ten').value;
+				var tuoi = document.getElementById('tuoi').value;
+				var gioitinh = document.getElementById('gioitinh').value;
+				document.write('<p>Ten:' + ten + '</p>');
+				document.write('<p>Tuoi:' + tuoi + '</p>');
+				document.write('<p>Gioi tinh:' + gioitinh + '</p>');
+			}
+		</script>
+	
+	</body>
+	</html>

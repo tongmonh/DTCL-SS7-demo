@@ -1,0 +1,96 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+html{
+	font-family: Helvetica, Arial, sans-serif;
+	}
+
+.container{
+	padding-bottom: 10px;
+    display: block;
+    width: 800px;
+    margin: auto;
+    border-bottom: 8px solid #f1f1f1;
+    background: #fff;
+}
+.main{
+	background-color: #ccc;
+}
+
+
+
+
+.info-table{
+	line-height: 1.6;
+		
+}
+
+.info-table .insec{
+	 margin-left: 50%;
+    transform: translateX(-10%);
+}
+
+.insec  a{
+	text-decoration: none;
+
+}
+
+.insec li{
+	list-style-type: none;
+}
+
+.info-table .item a{
+	color: red;
+}
+
+
+
+
+.img-header{
+padding-top: 10px;
+text-align: center;
+}
+
+
+
+/*chung*/
+
+.chung{
+	
+	line-height: 1.6;
+
+}
+
+.chung .chuthich{
+	text-align: center;
+	opacity: 0.7;
+}
+
+.chung .tieude{
+		margin-bottom: 10px;
+}
+
+.chung li{
+	/*list-style-type: none;*/
+	margin-left: 60px;
+}
+.chung h2,
+.chung h3,
+.chung ul,
+.chung .mota
+{
+margin-left: 25px;
+margin-right: 25px;
+
+}
+.chung .mota{
+	text-align: justify;
+}
+	
+
+
+

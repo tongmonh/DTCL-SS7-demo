@@ -1,0 +1,30 @@
+:root {
+	--primari: violet;
+}
+.desc a {
+	color: var(--primari);
+	}
+.list strong {
+	color: var(--primari);
+}
+.coppyright a {
+	color: var(--primari);
+}
+
+/*:root {
+    --primary: red;
+}
+
+.desc a {
+    color: var(--primary);
+    font-weight: 600; 
+}
+
+.list strong {
+    color: var(--primary);
+}
+
+.copyright a {
+    color: var(--primary);
+    font-weight: 600;
+}*/

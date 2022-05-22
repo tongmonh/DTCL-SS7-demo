@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		
+		<title>
+			Cuoc Khao Sat
+		</title>
+	</head>
+	<body>
+		<h1 id="quote"></h1>
+		<cite id="author"></cite>
+		<main>
+			<button class="btn-refresh" onclick="makeQuote()">Refresh</button>
+		</main>
+		<script>
+			var quotes = [
+			{//0
+			quote:'học , học nữa, học mãi',
+			author:'lê nin'
+			},
+			{//1
+			quote:'hẹn thư sau',
+			author:'wowy'
+			},
+			{
+			quote:'tặng 1 món quà',
+			author:'binz'
+			},
+			{
+			quote:'quả cầu pha lê',
+			author:'karik'
+			}
+
+			];
+			function ranDom(range){
+				return Math.floor(Math.random() * range);// lay gia tri tu 0-4
+			}
+			function getQuote(){
+				return quotes[ranDom(quotes.length)];
+			}
+			function makeQuote(){
+				var quote = getQuote();
+				var eleQuote = document.getElementById('quote');
+				var eleAuthor = document.getElementById('author')
+				eleQuote.innerText = quote.quote;
+				eleAuthor.innerText = quote.author;
+			}
+			window.onload = makeQuote;
+
+			
+		</script>
+	</body>

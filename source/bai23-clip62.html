@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> CÁC CÁCH CĂN GIỮA TRONG CSS</title>
+	<style type="text/css">
+		/*.box{
+			background-color: orange;
+			height: 100px;
+			text-align: center; dùng để chỉnh item ra giữa màn hình (tính theo chiều ngang), dùng cho thẻ cha khi có nhiều thẻ con, dùng cho thẻ con nếu chỉ có 1 thẻ con
+
+		}
+		h2{
+			color: blue;
+			
+			line-height: 100px; dùng để chỉnh item ra giữa màn hình tính theo chiều dọc, dùng cho thẻ cha khi có nhiều thẻ con, dùng cho thẻ con nếu chỉ có 1 thẻ con
+
+		}*/
+
+		/*.box{
+			background-color: violet;
+			height: 100px;
+			display: flex; dùng để căn giữa 1 hay nhiều thuộc tính của các thẻ con, các thuộc tính sẽ cách đều nhau (đi cùng vs margin: auto; ở bên dưới)
+			
+		}
+		h2{
+			color: blue;
+			margin: auto;
+			}*/
+
+		/*	.box{
+			background-color: green;
+			height: 100px;
+			align-items: center; thuộc tính align-items: ; đi cùng với justify-content: ;, cũng căn giữa các item con nhưng làm cho chúng dính vào nhau
+			justify-content: center;
+			justify-content: space-between;
+			justify-content: space-around;
+			justify-content: space-evenly;
+			display: flex;
+		}
+		h2{
+			color: blue;
+			
+			}*/
+
+
+		.box{
+			background-color: silver;
+			height: 100px;
+			display: flex;
+		}
+		h2{
+			color: blue;
+			margin: auto;
+			position: relative;
+			/*position: absolute;
+			top: 50px;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);*/
+			/*border-left: 3px solid #222;
+			padding-left: 20px;*/
+			}
+			h2::after{
+				position: absolute;
+				left: -10px;
+				content: "";
+				border-left: 3px solid #333;
+				height: 50px; thay đổi giá trị của thuộc tính để tăng kích thước vạch ngăn cách
+				top: 50%;
+				transform: translateY(-50%);
+			}	
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h2>ĐÂY LÀ </h2>
+		
+	</div>
+</body>
+</html>

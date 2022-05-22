@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Media queries?</title>
+	<style type="text/css">
+
+		.pc,
+		.tablet,
+		.mobile{
+			display: none;
+			font-size: 68px;
+		}
+
+		@Media(min-width: 1024px){
+			.pc{
+				display: block;
+			}
+		}
+
+		@Media(min-width: 740px) and (max-width: 1024px){
+			.tablet{
+				display: block;
+			}
+		}
+
+		@Media(max-width: 740px){
+			.mobile{
+				display: block;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="pc">đây là giao diện cho máy tính</div>
+	<div class="tablet">đây là giao diện cho ipad</div>
+	<div class="mobile">đây là giao diện cho điện thoại</div>
+
+</body>
+</html>

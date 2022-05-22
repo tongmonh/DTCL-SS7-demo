@@ -1,0 +1,79 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#main{
+	background-color: #E6E6FA;
+}
+
+#container{
+	padding-bottom: 10px;
+    display: block;
+    width: 800px;
+    margin: auto;
+    border-bottom: 8px solid #f1f1f1;
+    background: #fff;
+    font-family: sans-serif;
+
+}
+img{
+	max-width: 760px;
+	height: auto;
+	border-radius: 5px;
+}
+.header,
+.cuoitrang{
+	text-align: center;
+}
+.header-img{
+	display: flex;
+	justify-content: center;
+}
+.body{
+	margin-left: 10px;
+	margin-right: 10px;
+	
+
+}
+.tieude{
+	text-align: justify;
+	
+}
+.toche ol,
+.tuong ol,
+.candeu ul{
+	padding-left: 20px;
+	line-height: 1.6;	
+}
+p,
+ol,
+ul{
+	line-height: 1.6;
+}
+.candeu{
+	text-align: justify;
+}
+.khoangcach{
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+@media (max-width: 740px){
+	#container{
+		width: 740px;
+	}
+	img{
+		width: 740px;
+		
+	}
+	p, ol, ul, h2, h3{
+		font-size: 160%;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,38 @@
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		
+		<title>
+			Cuoc Khao Sat
+		</title>
+	</head>
+	<body>
+	<button onClick="onClickMe()">Click me</button>
+	<p>You have clicked <span id="count">0</span> times</p>
+	<script >
+		// var name = prompt('Bạn tên gì?');
+		// document.write('<p>Tên:' + name +'</p>');
+		// var love = prompt('Mày thích đứa nào?');
+		// document.write('<p>Thích:' + love + '</p>');
+		// var sure = confirm('Điền chuẩn rồi chứ?')
+		// if(sure==true)
+		// 	{
+		// 		document.write('<p>Chuẩn rồi</p>');
+		// 		}
+		// 		else
+		// 			document.write('<p>Chưa chuẩn</p>');
+		// var cao = prompt('Ban cao bao nhieu?');
+		// document.write('<p>Chieu cao:' + cao + '</p>');
+		var count = 0;
+		function onClickMe()
+		{
+			count++;
+			document.querySelector('#count').innerText = count;
+			//document.getElementById('count').innerText = count;
+		}
+
+	</script>
+	</body>
+	</html>
+	

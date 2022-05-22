@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>
+		bai luyen tap
+	</title>
+</head>
+
+<body>
+	<h1 id="chamngon"></h1>
+	<cite id="tacgia"></cite>
+	<main>
+	<button class="btn-refresh" onclick="makeRefresh()">refresh</button>
+	</main>
+	<script>
+		var danhSach = [
+		{
+			chamngon:'không một hành động tử tế nào, dù nhỏ đến đâu, lại bị lãng phí ',
+			tacgia:'Aesop'
+		},
+		{
+			chamngon:'hãy là sự thay đổi mà bạn muốn thấy trên thế giới',
+			tacgia:'Mahatma gandhi'
+		},
+		{
+			chamngon:'Hôm nay bạn ngồi dưới bóng mát vì có người trồng cây lâu lắm rồi',
+			tacgia:'warren buffett'
+		},
+		{
+			chamngon:'Một tia nắng duy nhất cũng đủ để xua đuổi nhiều bóng tối',
+			tacgia:'francis os assisi'
+		},
+		{
+			chamngon:'cuộc sống là 10% những gì xảy ra với bạn và 90% là cách bạn phản ứng với nó',
+			tacgia:'charles r.swindoll'
+		}
+		];
+	function ranDom(his)
+	{
+		return Math.floor(Math.random()*his);
+	}
+	function make()
+	{
+		return danhSach[ranDom(danhSach.length)];
+	}
+	function makeRefresh()
+	{
+		var quote = make();
+		var eleChamngon = document.getElementById('chamngon');
+		var eleTacgia = document.getElementById('tacgia');
+
+		eleChamngon.innerText = quote.chamngon;
+		eleTacgia.innerText = quote.tacgia;
+
+	}
+	window.onload = makeRefresh();
+	</script>
+
+</body>
+</html>

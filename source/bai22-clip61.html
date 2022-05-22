@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		css position sticky - khác với fixed, sticky sẽ bám dính vào trình duyệt thay vì dích chặt như fixed
+	</title>
+	<style type="text/css">
+		
+
+		h1{
+			
+			margin-top: 100px;
+			padding: 0 16px;
+			background-color: blue;
+			position: sticky;
+			/*position: -webkit-sticky; dùng để hộ trợ trình duyệt safari*/
+			top: 0px;
+			
+		}
+
+		.box1{
+			height: 3000px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Position</h1>
+	<ul class="box1">
+		<li>relative (vị trí tương đối)</li>
+		<li>absolute (vị trí tuyệt đối) </li>
+		<li>fixed (vị trí phụ thuộc vào khung trình duyệt) </li>
+		<li>sticky (vị trí bám dính) </li>
+	</ul>
+
+</body>
+</html>
